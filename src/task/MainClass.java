@@ -1,18 +1,26 @@
 package task;
 
 import task.anagram.Anagram;
+import task.mod.ModByNumber;
+import task.mod.ModByNumberImpl;
 import task.user.User;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.function.BiFunction;
+import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 public class MainClass {
     public static void main(String[] args) {
-        /*String s1 = "qwertyqq";
+        /* task 2
+        String s1 = "qwertyqq";
         String s2 = "qqqwerty";
-        System.out.println(Anagram.isAnagram(s1, s2));*/
+        System.out.println(Anagram.isAnagram(s1, s2));
+        */
+        /* task 3
         User user1 = new User("Zoro", 21, "Simotsuki");
         User user2 = new User("Robin", 30, "Ohara");
         User user3 = new User("Nami", 20, "Kokoyashi");
@@ -28,6 +36,7 @@ public class MainClass {
         users.stream().sorted(Comparator.comparing(User::getCountry)
                 .thenComparing(User::getAge))
                 .forEach(System.out::println);
-
+                */
+        Predicate<Integer> pred = x -> x % 13 == 0;
     }
 }
