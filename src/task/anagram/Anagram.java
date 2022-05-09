@@ -1,4 +1,4 @@
-package task;
+package task.anagram;
 
 
 import java.util.*;
