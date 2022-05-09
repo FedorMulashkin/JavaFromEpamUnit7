@@ -37,6 +37,11 @@ public class MainClass {
                 .thenComparing(User::getAge))
                 .forEach(System.out::println);
                 */
+        /* task 4
         Predicate<Integer> pred = x -> x % 13 == 0;
+         */
+        /* task 5
+        BiFunction<String, String, String> longestStr = (str1, str2) -> str1.length() > str2.length() ? str1 : str2;
+         */
     }
 }
